@@ -1,0 +1,15 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+
+  - name: installing nettools
+    package:
+       name: net-tools
+
+
+  -  name: installing apache
+     shell: ifconfig  >> if.txt
+
